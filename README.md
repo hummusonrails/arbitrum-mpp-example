@@ -29,7 +29,7 @@ pnpm install --frozen-lockfile
 pnpm demo
 ```
 
-The demo starts a local chain and HTTPS server, deploys Demo USD, and buys one report through each payment path for 0.01 DUSD. It prints the receipts and shuts everything down when finished.
+The demo starts a local chain and HTTPS server, deploys Demo USD, and buys one report through each payment path for 0.01 DUSD. It summarizes each payment and shuts everything down when finished. Use `pnpm demo --verbose` for full transaction hashes and receipts.
 
 ![Terminal recording of the local demo completing EIP-3009 and Permit2 payments](.github/media/demo.gif)
 

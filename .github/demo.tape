@@ -3,9 +3,9 @@ Output .github/media/demo.mp4
 
 Set Shell bash
 Set FontFamily "Menlo"
-Set FontSize 22
-Set Width 1600
-Set Height 1200
+Set FontSize 24
+Set Width 1040
+Set Height 860
 Set Padding 24
 Set Framerate 15
 Set TypingSpeed 90ms
@@ -13,8 +13,12 @@ Set Theme {"name":"Arbitrum","background":"#213147","foreground":"#FFFFFF","curs
 
 Env PS1 "$ "
 Env ENV_FILE "/dev/null"
+Env FORCE_COLOR "1"
+Env NO_COLOR ""
+Env TERM "xterm-256color"
 
 Type "pnpm --silent demo"
 Sleep 500ms
 Enter
-Sleep 12s
+Wait+Screen /Local chain and server stopped/
+Sleep 8s
