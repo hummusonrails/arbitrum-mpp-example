@@ -1,0 +1,40 @@
+{
+    "name": "arbitrum-mpp-example",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "packageManager": "pnpm@10.30.3",
+    "engines": {
+        "node": ">=22.13.0"
+    },
+    "scripts": {
+        "dev": "tsx src/server.ts",
+        "client": "tsx src/client.ts",
+        "demo": "tsx scripts/demo.ts",
+        "setup:sepolia": "tsx scripts/setup-sepolia.ts",
+        "check": "tsc --noEmit",
+        "test": "tsx --test test/*.test.ts",
+        "contracts:build": "forge build --root contracts",
+        "test:sepolia": "tsx scripts/test-sepolia.ts",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "lint": "eslint .",
+        "tls": "tsx scripts/tls.ts",
+        "solidity:format": "forge fmt --check contracts/src/DemoToken.sol",
+        "verify": "pnpm format:check && pnpm lint && pnpm solidity:format && pnpm check && pnpm test"
+    },
+    "dependencies": {
+        "dotenv": "17.4.2",
+        "mppx": "0.9.3",
+        "viem": "2.56.5"
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "eslint": "^10.10.0",
+        "prettier": "3.9.6",
+        "solc": "0.8.28",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.0",
+        "typescript-eslint": "^8.70.0"
+    }
+}

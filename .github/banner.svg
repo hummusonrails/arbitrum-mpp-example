@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" role="img" aria-labelledby="title description">
+  <title id="title">MPP on Arbitrum</title>
+  <desc id="description">A runnable payment flow, from HTTP 402 to onchain settlement.</desc>
+  <defs><linearGradient id="accent"><stop stop-color="#12AAFF"/><stop offset="1" stop-color="#9DCCED"/></linearGradient></defs>
+  <rect width="1280" height="320" fill="#213147"/>
+  <path d="M0 2H1280M0 318H1280" stroke="url(#accent)" stroke-width="4"/>
+  <path d="M1040 0L880 320M1130 0L970 320M1220 0L1060 320" stroke="#12AAFF" stroke-width="35" opacity=".08"/>
+  <g text-anchor="middle" font-family="Inter, Helvetica Neue, Arial, sans-serif">
+    <text x="640" y="118" font-size="52" font-weight="700" fill="#FFFFFF">MPP on Arbitrum</text>
+    <text x="640" y="166" font-size="22" fill="#9DCCED">From HTTP 402 to onchain settlement</text>
+    <g font-size="16" fill="#12AAFF">
+      <path d="M320 214H960V253H320Z" fill="#12AAFF" opacity=".08"/>
+      <text x="640" y="240">SOLIDITY · TYPESCRIPT · EIP-3009 · PERMIT2</text>
+    </g>
+  </g>
+</svg>
