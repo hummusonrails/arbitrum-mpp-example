@@ -31,6 +31,10 @@ pnpm demo
 
 The demo starts a local chain and HTTPS server, deploys Demo USD, and buys one report through each payment path for 0.01 DUSD. It prints the receipts and shuts everything down when finished.
 
+![Terminal recording of the local demo completing EIP-3009 and Permit2 payments](.github/media/demo.gif)
+
+Actual local run of `pnpm --silent demo`. [Watch or download the MP4](.github/media/demo.mp4).
+
 ```bash
 pnpm verify
 ```
